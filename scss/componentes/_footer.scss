@@ -1,0 +1,30 @@
+footer{
+    .container2{
+        @extend %flex-spbetween;
+        background-color: grey;
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+    a{
+        text-decoration: none;
+        color: $clr-second;
+        font-size: 1.5rem;
+
+    }
+    h3{
+        color: $clr-second;
+        font-size: 1.5rem;
+    }
+    p{
+        color: rgb(193, 188, 188);
+    }
+    #links-index-footer{
+        a{
+            display: block;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+    }
+    
+
+}

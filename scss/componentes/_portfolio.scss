@@ -1,0 +1,35 @@
+#grilla-portfolio{
+    @include display-grid(grid, 1fr 1fr 1fr, 1fr 1fr,"imagen-1 imagen-2 imagen-3"
+    "imagen-4 imagen-5 imagen-6");
+
+    img{
+        width:300px;
+        height: 300px;
+
+        #img-1{
+            grid-area: imagen-1;
+        }
+        #img-2{
+            grid-area: imagen-2;
+        }
+        #img-3{
+            grid-area: imagen-3;
+        }
+        #img-4{
+            grid-area: imagen-4;
+        }
+        img #img-5{
+            grid-area: imagen-5;
+        }
+        img #img-6{
+            grid-area: imagen-6;
+        }
+    }
+}
+
+@media screen and (max-width:750px){
+    #grilla-portfolio{
+        display: block;
+        margin-left: 25%;
+    }
+}
